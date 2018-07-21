@@ -1,0 +1,22 @@
+dwm_tchat:
+    resource: "@DwmTchatBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+
+Default_eng:
+       path : /eng
+       defaults : {_controller: DwmTchatBundle:Default:eng}
+
+
+Default_mess:
+       path : /mess
+       defaults : {_controller: DwmTchatBundle:Default:mess}
+
+Default_getmess:
+       path : /getmess
+       defaults : {_controller: DwmTchatBundle:Default:getmess}

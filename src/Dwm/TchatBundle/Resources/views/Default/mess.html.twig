@@ -1,0 +1,20 @@
+{% extends "base.html.twig" %}
+{% block body %}
+
+    {% for cat in  cat %}<textarea rows="4" cols="50">{{cat.contenue}}</textarea>
+        <td>{{form_widget(f.contenue)}}</td>
+        </td>
+    {% endfor %}
+
+    {{form_start(f)}}
+    <table class="table table-bordered table-reponsive">
+        <tr>
+            <td><a  href= "{{path('Default_mess')}}" class="btn  btn-info">send your message</a>
+        </tr>
+
+    </table>
+
+    <br>
+    {{ form_end(f) }}
+    <br>
+{% endblock %}
